@@ -9,8 +9,8 @@ from diffusers import DDIMScheduler
 from utils import CustomImageFolder, get_logger, img_to_DMlatents
 from loss.loss import EnhancedLossProvider
 from loss.pytorch_ssim import ssim
-from main.wmdiffusion import WMDetectStableDiffusionPipeline
-from main.utils import get_img_tensor, save_img, compute_psnr
+from others.wmdiffusion import WMDetectStableDiffusionPipeline
+from others.utils import get_img_tensor, save_img, compute_psnr
 import random
 from contextlib import nullcontext
 from torchvision.transforms import GaussianBlur, RandomResizedCrop, RandomHorizontalFlip
